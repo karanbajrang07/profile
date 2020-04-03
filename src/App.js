@@ -15,22 +15,22 @@ import Contact from './contents/Contact';
 
 function App() {
   return (
-    <Router  basename={process.env.PUBLIC_URL}>
+    <Router >
     <div className="App">
     <Navbar />
-    <Route exact path="/">
+    <Route exact path={process.env.PUBLIC_URL + '/'}>
     <Home />
     </Route>
-    <Route path="/about">
+    <Route path={process.env.PUBLIC_URL+ "/about"}>
     <About />
     </Route>
-    <Route path="/education">
+    <Route path={process.env.PUBLIC_URL+ "/education"}>
     <Education />
     </Route>
-    <Route path="/skills">
+    <Route path={process.env.PUBLIC_URL+ "/skills"}>
     <Skills />
     </Route>
-    <Route path="/contact">
+    <Route path={process.env.PUBLIC_URL+ "/contact"}>
     <Contact />
     </Route>
     </div>
