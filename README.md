@@ -1,6 +1,6 @@
-Portfolio/Resume Website using React JS.
 
-Clone or Download the project
+
+Clone the project
 
 Open the project in vscode
 

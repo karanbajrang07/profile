@@ -18,19 +18,19 @@ function App() {
     <Router >
     <div className="App">
     <Navbar />
-    <Route exact path={process.env.PUBLIC_URL + '/'}>
+    <Route exact path= '/'>
     <Home />
     </Route>
-    <Route path={process.env.PUBLIC_URL+ "/about"}>
+    <Route path="/about">
     <About />
     </Route>
-    <Route path={process.env.PUBLIC_URL+ "/education"}>
+    <Route path="/education">
     <Education />
     </Route>
-    <Route path={process.env.PUBLIC_URL+ "/skills"}>
+    <Route path="/skills">
     <Skills />
     </Route>
-    <Route path={process.env.PUBLIC_URL+ "/contact"}>
+    <Route path= "/contact">
     <Contact />
     </Route>
     </div>
