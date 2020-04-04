@@ -4,6 +4,7 @@ import {
   BrowserRouter as Router,
   Route,
 } from "react-router-dom";
+import { HashRouter } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Home from './contents/Home';
 import About from './contents/About';
@@ -15,7 +16,7 @@ import Contact from './contents/Contact';
 
 function App() {
   return (
-    <Router >
+    <HashRouter >
     <div className="App">
     <Navbar />
     <Route exact path= '/'>
@@ -34,7 +35,7 @@ function App() {
     <Contact />
     </Route>
     </div>
-    </Router>
+    </HashRouter>
     );
   }
   
